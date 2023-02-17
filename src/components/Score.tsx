@@ -19,18 +19,18 @@ const Score = (props:prop) => {
         <div 
             className="w-full flex p-5 px-10 justify-between text-4xl"
         >
-            <div
+            <p
                 className={
                     (props.state.togglePlayer===false && props.state.status==="")?
-                    "text-green-600":"text-black"
+                    "text-green-600 flex items-center":"text-black flex items-center"
                 }
-            >Player 1 (<strong>X</strong>) - {props.state.player1Score}</div>
-            <div
+            >Player 1 (<strong>X</strong>) - {props.state.player1Score} {(props.state.status!==""&&props.state.togglePlayer===false)?<span className="text-red-600 text-[60px]">&#127894;</span>:""}</p>
+            <p
                 className={
                     (props.state.togglePlayer===true && props.state.status==="")?
-                    "text-green-600":"text-black"
+                    "text-green-600 flex items-center":"text-black flex items-center"
                 }
-            >Player 2 (<strong>O</strong>) - {props.state.player2Score}</div>
+            >Player 2 (<strong>O</strong>) - {props.state.player2Score} {(props.state.status!==""&&props.state.togglePlayer===true)?<span className="text-red-600 text-[60px]">&#127894;</span>:""}</p>
         </div>
     )
 }

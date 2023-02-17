@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import TicTacToe from './components';
+import MainGameComponent from './components/MainGameComponent';
 
 function App() {
   return (
     <React.Fragment>
-      <TicTacToe />
+      <MainGameComponent />
     </React.Fragment>
   );
 }

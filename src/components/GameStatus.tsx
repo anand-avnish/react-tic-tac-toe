@@ -29,7 +29,7 @@ const GameStatus = (props:prop) => {
 
     return (
         <div className="grow flex justify-center items-center flex-col">
-            <div className="text-[50px] py-5">{props.state.status}</div>
+            <p className="text-[50px] py-5">{props.state.status.length>12?<span className="text-[60px]">&#127881;</span>:""} {props.state.status} {props.state.status.length>12?<span className="text-[60px]">&#127881;</span>:""}</p>
             <div className="actions flex items-center justify-center">
                 <button className="p-3 border-2 border-black text-black text-xl rounded-lg mr-10" onClick={()=>viewBoard()}>View Board</button>
                 <button className="p-3 bg-black text-white text-xl rounded-lg" onClick={()=>restartGame()}>Restart</button>

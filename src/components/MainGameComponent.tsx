@@ -3,7 +3,7 @@ import Game from './Game'
 import GameStatus from './GameStatus'
 import Score from './Score'
 
-const TicTacToe = () => {
+const MainGameComponent = () => {
     const [state, setState] = useState<any>({
         player1Score:0,
         player2Score:0,
@@ -24,4 +24,4 @@ const TicTacToe = () => {
     )
 }
 
-export default TicTacToe
+export default MainGameComponent

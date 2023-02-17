@@ -51,10 +51,10 @@ const Game = (props:prop) => {
         ){
             if(togglePlayer){
                 let score2=player2Score;
-                props.setState({...props.state,player2Score:score2+1, status:"🎉 Player 2 (O) Wins 🎉", toggleStatus:!toggleStatus})
+                props.setState({...props.state,player2Score:score2+1, status:" Player 2 (O) Wins ", toggleStatus:!toggleStatus})
             }else{
                 let score1=player1Score;
-                props.setState({...props.state,player1Score:score1+1, status:"🎉 Player 1 (X) Wins 🎉", toggleStatus:!toggleStatus})
+                props.setState({...props.state,player1Score:score1+1, status:" Player 1 (X) Wins ", toggleStatus:!toggleStatus})
             }
         }else if(
             !actions.includes("")
